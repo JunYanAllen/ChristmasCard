@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Christmas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="animate_text.css">
+    <!-- <link rel="stylesheet" href="snow.css"> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/847b731f5e.js" crossorigin="anonymous"></script>
+
+    <!-- <script src="script.js"></script> -->
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .cover_div{
+            position:relative;
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            overflow-x: hidden;
+            z-index:1;
+        }
+
+        .content_div{
+            position:absolute;
+            top:0px;
+            left: -100%;
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
+            z-index:2;
+        }
+
+        .slide {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 0.2em;
+            color: white;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .slide h1{
+            text-align: center;
+        }
+
+        .content_div .slide{
+            background: radial-gradient(ellipse at bottom, #1b2735 0%, #0a2b17 100%);
+
+        }
+
+        .content_div .slide:nth-child(1){
+            /* background-color: #a32300; */
+            font-family: 'Calligraffitti';
+            text-align: center;
+        }
+        .content_div .slide:nth-child(2){
+            /* background-color:blue; */
+        }
+        .content_div .slide:nth-child(3){
+            /* background-color: rgb(255, 0, 128); */
+        }
+        .content_div .slide:nth-child(4){
+            /* background-color: rgb(255, 238, 0); */
+        }
+        .content_div .slide:nth-child(5){
+            /* background-color: rgb(60, 255, 0); */
+        } 
+        .button_div {
+            position: fixed;
+            bottom: 20px;
+            right: -100%;
+            background-color: rgba(255, 255, 255, 0);
+            z-index: 2;
+        }
+
+        .next-btn{
+            font-size: 1.3rem;
+            border-radius: 20px;
+            border: #d6a838 2px solid;
+            background-color: rgba(255, 255, 255, 0);
+            color: #d6a838;
+        }
+
+        .carousel-caption{
+            top: 0;  
+        }
+        
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.content_div').animate({
+                    left: "0px"
+                },2000);
+            $('.button_div').animate({
+                right: "45%"
+            },2000);
+            setTimeout(function(){
+                $('text').each(function () {
+                    const el = $(this);
+                    const text = el.html().split('');
+                    el.html(`<tspan>${text.join('</tspan><tspan>')}</tspan>`);
+                });
+            },1000);
+            
+            $('.next-btn').click(function () {
+                var $TopPos = $('.content_div').scrollTop();
+                console.log($TopPos);    
+                $(".content_div").animate({
+                    scrollTop: $TopPos + $(document).height()
+                }, 800);
+            });
+
+            $(".Merry").attr({
+                "y":($(document).height()/3),
+                "x":($(document).width()/2)
+            });
+            $(".Christmas").attr({
+                "y":($(document).height()/2),
+                "x":($(document).width()/2)
+            });
+            $(".for_you").attr({
+                "y":(($(document).height()/3)*2),
+                "x":($(document).width()/2)
+            });
+            
+            $("img").attr({
+                width:$(document).width(),
+                height:$(document).height()
+            })
+        });
+    </script>
+</head>
+<body>
+    <div class="cover_div"></div>
+
+    <div class="content_div">
+        
+        <section class="slide " id="slide1">
+            <svg>
+                <text class="Merry" >Merry</text>
+                <text class="Christmas" >Christmas</text>
+                <text class="for_you" >For You</text>
+            </svg>
+        </section>
+        <section class="slide " id="slide2">
+            <div id="demo" class="carousel slide" data-ride="carousel" data-interval="false">                
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    
+                  </div>
+                  <div class="carousel-item">
+                       
+                  </div>
+                  <div class="carousel-item">
+        
+                  </div>
+                </div>
+                
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+        </section>
+        <section class="slide " id="slide3">
+          <h1>No JavaScript Required</h1>
+        </section>
+        <section class="slide " id="slide4">
+          <h1>End</h1>
+        </section>
+        <div class="button_div">
+            <button class="next-btn"><i class="fas fa-angle-down"></i></button>
+        </div>
+    </div>
+</body>
+</html>

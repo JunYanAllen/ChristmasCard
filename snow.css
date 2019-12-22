@@ -4,6 +4,7 @@
     height: 10px;
     background: white;
     border-radius: 50%;
+    z-index: 3;
   }
   .snow:nth-child(1) {
     opacity: 0.2337;

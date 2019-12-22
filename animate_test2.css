@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css?family=Calligraffitti);
+@-webkit-keyframes s {
+  0% {
+    stroke-dasharray: 0 300;
+  }
+  100% {
+    stroke-dasharray: 300 0;
+  }
+}
+@keyframes s {
+  0% {
+    stroke-dasharray: 0 300;
+  }
+  100% {
+    stroke-dasharray: 300 0;
+  }
+}
+@-webkit-keyframes f {
+  0% {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+    opacity: .5;
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: .1;
+  }
+  100% {
+    -webkit-transform: translateY(50vh);
+            transform: translateY(50vh);
+    opacity: 0;
+  }
+}
+@keyframes f {
+  0% {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+    opacity: .5;
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: .1;
+  }
+  100% {
+    -webkit-transform: translateY(50vh);
+            transform: translateY(50vh);
+    opacity: 0;
+  }
+}
+
+svg {
+  width: 100%;
+  height: 100vh;
+}
+
+.Merry, .Christmas, .for_you{
+  fill: none;
+  stroke: #d6a838;
+  text-shadow: 0 0 14px #0a2b17;
+  stroke-width: 4;
+  stroke-dasharray: 0 100;
+  text-anchor: middle;
+}
+
+.Merry {
+  font-size: 4em;
+}
+.Merry tspan:nth-child(1) {
+  -webkit-animation: s 2s 1s linear forwards;
+          animation: s 2s 1s linear forwards;
+}
+.Merry tspan:nth-child(2) {
+  -webkit-animation: s 2s 2s linear forwards;
+          animation: s 2s 2s linear forwards;
+}
+.Merry tspan:nth-child(3) {
+  -webkit-animation: s 2s 3s linear forwards;
+          animation: s 2s 3s linear forwards;
+}
+.Merry tspan:nth-child(4) {
+  -webkit-animation: s 2s 4s linear forwards;
+          animation: s 2s 4s linear forwards;
+}
+.Merry tspan:nth-child(5) {
+  -webkit-animation: s 2s 5s linear forwards;
+          animation: s 2s 5s linear forwards;
+}
+
+.Christmas {
+  font-size: 4rem;
+}
+.Christmas tspan:nth-child(1) {
+  -webkit-animation: s 2s 6s linear forwards;
+          animation: s 2s 6s linear forwards;
+}
+.Christmas tspan:nth-child(2) {
+  -webkit-animation: s 2s 7s linear forwards;
+          animation: s 2s 7s linear forwards;
+}
+.Christmas tspan:nth-child(3) {
+  -webkit-animation: s 2s 8s linear forwards;
+          animation: s 2s 8s linear forwards;
+}
+.Christmas tspan:nth-child(4) {
+  -webkit-animation: s 2s 9s linear forwards;
+          animation: s 2s 9s linear forwards;
+}
+.Christmas tspan:nth-child(5) {
+  -webkit-animation: s 2s 10s linear forwards;
+          animation: s 2s 10s linear forwards;
+}
+.Christmas tspan:nth-child(6) {
+  -webkit-animation: s 2s 11s linear forwards;
+          animation: s 2s 11s linear forwards;
+}
+.Christmas tspan:nth-child(7) {
+  -webkit-animation: s 2s 12s linear forwards;
+          animation: s 2s 12s linear forwards;
+}
+.Christmas tspan:nth-child(8) {
+  -webkit-animation: s 2s 13s linear forwards;
+          animation: s 2s 13s linear forwards;
+}
+.Christmas tspan:nth-child(9) {
+  -webkit-animation: s 2s 14s linear forwards;
+          animation: s 2s 14s linear forwards;
+}
+
+.for_you{
+  font-size: 4rem;
+}
+
+.for_you tspan:nth-child(1) {
+  -webkit-animation: s 2s 11s linear forwards;
+          animation: s 2s 11s linear forwards;
+}
+.for_you tspan:nth-child(2) {
+  -webkit-animation: s 2s 12s linear forwards;
+          animation: s 2s 12s linear forwards;
+}
+.for_you tspan:nth-child(3) {
+  -webkit-animation: s 2s 13s linear forwards;
+          animation: s 2s 13s linear forwards;
+}
+.for_you tspan:nth-child(4) {
+  -webkit-animation: s 2s 14s linear forwards;
+          animation: s 2s 14s linear forwards;
+}
+.for_you tspan:nth-child(5) {
+  -webkit-animation: s 2s 14s linear forwards;
+          animation: s 2s 14s linear forwards;
+}
+.for_you tspan:nth-child(6) {
+  -webkit-animation: s 2s 15s linear forwards;
+          animation: s 2s 15s linear forwards;
+}
+.for_you tspan:nth-child(7) {
+  -webkit-animation: s 2s 16s linear forwards;
+          animation: s 2s 16s linear forwards;
+}
