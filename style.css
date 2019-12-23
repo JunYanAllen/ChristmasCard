@@ -6,6 +6,7 @@ body{
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #0a2b17 100%);
     background-attachment:fixed;
     background-blend-mode: hard-light;
+    height: 100vh;
     overflow: hidden; 
     font-family:'Lobster', cursive;
 }
