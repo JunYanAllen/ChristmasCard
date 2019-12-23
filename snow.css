@@ -47,15 +47,15 @@
   }
   .snow:nth-child(4) {
     opacity: 0.8579;
-    transform: translate(98.9018vw, -10px) scale(0.9816);
+    transform: translate(90.9018vw, -10px) scale(0.9816);
     animation: fall-4 21s -9s linear infinite;
   }
   @keyframes fall-4 {
     52.828% {
-      transform: translate(99.7374vw, 52.828vh) scale(0.9816);
+      transform: translate(90.7374vw, 52.828vh) scale(0.9816);
     }
     to {
-      transform: translate(99.3196vw, 100vh) scale(0.9816);
+      transform: translate(90.3196vw, 100vh) scale(0.9816);
     }
   }
   .snow:nth-child(5) {

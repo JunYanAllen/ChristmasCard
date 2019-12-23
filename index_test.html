@@ -7,7 +7,7 @@
     <title>Christmas</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="snow.css">
+    <link rel="stylesheet" href="snow2.css">
     <link rel="stylesheet" href="animate_text.css">
     <link rel="stylesheet" href="flip_card.css">
 
@@ -15,6 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/847b731f5e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
     <script src="script.js"></script>
 
     <style>
@@ -66,18 +67,14 @@
             font-family: 'Calligraffitti';
             text-align: center;
         }
-        .content_div .slide:nth-child(2){
-            /* background-color:blue; */
-        }
+        
         .content_div .slide:nth-child(3){
-            /* background-color: rgb(255, 0, 128); */
+            flex-wrap: wrap;
         }
         .content_div .slide:nth-child(4){
-            /* background-color: rgb(255, 238, 0); */
+            flex-wrap: wrap;
         }
-        .content_div .slide:nth-child(5){
-            /* background-color: rgb(60, 255, 0); */
-        } 
+        
         .button_div {
             position: fixed;
             bottom: 20px;
@@ -137,13 +134,7 @@
                 "x":($(document).width()/2)
             });
 
-            $("img").attr({
-                width:$(document).width(),
-                height:$(document).height()
-            })
-
-            $('.tag-1-side').css('height',$(document).height()-120);
-            $('.tag-2-side').css('height',$(document).height()-120);
+            $('.tag-container').css('height',$(document).heigt()-100);
             $('.tag-3-side').css('height',$(document).height()-150);
         });
     </script>
@@ -192,7 +183,9 @@
                                 <div class="tag-side tag-1-side is-back">
                                     <div class="tag-1-top"></div>
                                     <div class="tag-text-back tag-1-text">
-                                        <p>第一封內容</p>
+                                        <p>第一次做這樣的聖誕卡片</p>
+                                        <p>希望你會喜歡，很多地方可能不是做得很好</p>
+                                        <p>但我相信這不會讓你失望～</p>
                                         <div class="rule-shape rule-red">&starf;</div>
                                     </div>
                                 </div>
@@ -214,7 +207,10 @@
                                 <div class="tag-side tag-2-side is-back">
                                     <div class="tag-2-top"></div>
                                     <div class="tag-text-back tag-2-text">
-                                        <p>第二封內容</p>
+                                        <p>你說希望收集到很多的聖誕樹</p>
+                                        <p>雖然幫你跟幾顆聖誕書拍了幾張</p>
+                                        <p>但還有好多的聖誕樹都還沒幫你拍到呢</p>
+                                        <p>希望下一年可以幫你達成～</p>
                                         <div class="rule-diagonal"></div>
                                     </div>
                                 </div>
@@ -236,7 +232,11 @@
                                 <div class="tag-side tag-3-side is-back">
                                     <div class="tag-3-top"></div>
                                     <div class="tag-text-back tag-3-text">
-                                        <p>第三封內容</p>
+                                        <p>不知道這樣形式的聖誕賀卡你是否喜歡？</p>
+                                        <p>如果喜歡下次我會在弄一個更厲害的，讓你可以去炫耀的賀卡</p>
+                                        <p>這個網站會一直留在網路上</p>
+                                        <p>當你想看的時候都可以隨時隨地打開來看</p>
+                                        <p style="letter-spacing: 5px;font-size: 1.2rem;">保.存.期.限.永.久</p>
                                         <div class="rule-shape">&#10052;</div>
                                     </div>
                                 </div>
@@ -256,10 +256,14 @@
               </div>
         </section>
         <section class="slide " id="slide3">
-          <h1>No JavaScript Required</h1>
+          <h1>Hope you</h1>
+          <h1>On</h1>
+          <h1>Today</h1>
+          <h1>will Happy all day</h1>
         </section>
         <section class="slide " id="slide4">
-          <h1>End</h1>
+            <h1>Hope you like my christmas card</h1>
+            <img src="mickey.png" style="width: 100%;height: 350px;">
         </section>
         <div class="button_div">
             <button class="next-btn"><i class="fas fa-angle-down"></i></button>

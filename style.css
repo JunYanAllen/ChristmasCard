@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Solway&display=swap');
 
+
 body{
     margin:0;
     padding:0;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #0a2b17 100%);
     background-attachment:fixed;
     background-blend-mode: hard-light;
-    height: 100vh;
+    /* height: 100vh; */
     overflow: hidden; 
     font-family:'Lobster', cursive;
 }
