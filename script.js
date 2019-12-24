@@ -3,7 +3,7 @@ $(document).ready(function(){
         $('body').prepend('<div class="snow"></div>');
     }
 
-    var $countDate = new Date('Dec 24,2019 00:00:00').getTime();
+    var $countDate = new Date('Dec 25,2019 00:00:00').getTime();
 
     var $now = new Date().getTime();
 
