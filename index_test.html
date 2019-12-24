@@ -69,6 +69,7 @@
         }
         
         .content_div .slide:nth-child(3){
+            flex-direction:column;
             flex-wrap: wrap;
         }
         .content_div .slide:nth-child(4){
@@ -97,47 +98,6 @@
         
     </style>
 
-    <script>
-        $(document).ready(function(){
-            $('.content_div').animate({
-                    left: "0px"
-                },2000);
-            $('.button_div').animate({
-                right: "45%"
-            },2000);
-            setTimeout(function(){
-                $('text').each(function () {
-                    const el = $(this);
-                    const text = el.html().split('');
-                    el.html(`<tspan>${text.join('</tspan><tspan>')}</tspan>`);
-                });
-            },1000);
-            
-            $('.next-btn').click(function () {
-                var $TopPos = $('.content_div').scrollTop();
-                console.log($TopPos);    
-                $(".content_div").animate({
-                    scrollTop: $TopPos + $(document).height()
-                }, 800);
-            });
-
-            $(".Merry").attr({
-                "y":($(document).height()/3),
-                "x":($(document).width()/2)
-            });
-            $(".Christmas").attr({
-                "y":($(document).height()/2),
-                "x":($(document).width()/2)
-            });
-            $(".for_you").attr({
-                "y":(($(document).height()/3)*2),
-                "x":($(document).width()/2)
-            });
-
-            $('.tag-container').css('height',$(document).heigt()-100);
-            $('.tag-3-side').css('height',$(document).height()-150);
-        });
-    </script>
 </head>
 <body>
     <div class="cover_div">
